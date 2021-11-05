@@ -35,7 +35,7 @@ export PATH=$PATH:$GOPATH/bin
 #### Download and Compile ANT
 
 ```
-$ git clone https://github.com/ant/ant.git
+$ git clone https://github.com/antnest-network/ant.git
 
 $ cd ant
 $ make install
