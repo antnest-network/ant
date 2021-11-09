@@ -112,7 +112,7 @@ require (
 )
 
 replace (
-	github.com/ipfs/go-ipfs-config v0.14.0 => github.com/antnest-network/go-ant-config v0.0.0-20211103092459-da33355f8362
+	github.com/ipfs/go-ipfs-config v0.14.0 => github.com/antnest-network/go-ant-config v0.0.0-20211109063216-1c7eab6e441b
 	github.com/ipfs/interface-go-ipfs-core v0.4.0 => github.com/antnest-network/interface-go-ant-core v0.0.0-20211103094604-fdc44b00eb11
 )
 
