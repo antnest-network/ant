@@ -83,8 +83,8 @@ github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883/go.mod h1:rCTlJbsFo
 github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239/go.mod h1:2FmKhYUyUczH0OGQWaF5ceTx0UBShxjsH6f8oGKYe2c=
 github.com/antnest-network/ant-proto v0.0.0-20211103102432-5f2eebb5d105 h1:D68kx6xWzsdax1HegoOe2u1h4FamjvagSmiD6AzT1K0=
 github.com/antnest-network/ant-proto v0.0.0-20211103102432-5f2eebb5d105/go.mod h1:3MRuwjwTNPKMdUfChKh5vQRVm6t6/sCHzNAxFhyHxPo=
-github.com/antnest-network/go-ant-config v0.0.0-20211109063216-1c7eab6e441b h1:wnO2SJ6jH37lZFLTd1duMi3wqC7DyCTQPoZU+sSv3yE=
-github.com/antnest-network/go-ant-config v0.0.0-20211109063216-1c7eab6e441b/go.mod h1:b49NAvkbknmKydI0MJ0pdh2R42OjgjrPI6SVN0DPtYs=
+github.com/antnest-network/go-ant-config v0.0.0-20211115012827-07ee6f6e26f2 h1:FaA+lOLLuUeGCHkAP+d3CBbleL1GFkFMHFswi4YLqQQ=
+github.com/antnest-network/go-ant-config v0.0.0-20211115012827-07ee6f6e26f2/go.mod h1:b49NAvkbknmKydI0MJ0pdh2R42OjgjrPI6SVN0DPtYs=
 github.com/antnest-network/interface-go-ant-core v0.0.0-20211103094604-fdc44b00eb11 h1:Hc4D0iMbIZOwslMZP67YpyfXztte3mOTcNsFqKvfipY=
 github.com/antnest-network/interface-go-ant-core v0.0.0-20211103094604-fdc44b00eb11/go.mod h1:UJBcU6iNennuI05amq3FQ7g0JHUkibHFAfhfUIy927o=
 github.com/apache/arrow/go/arrow v0.0.0-20191024131854-af6fa24be0db/go.mod h1:VTxUBvSJ3s3eHAg65PNgrsn5BtqCRPdmyXh6rAfdxN0=
