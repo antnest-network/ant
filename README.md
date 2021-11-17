@@ -38,6 +38,7 @@ export PATH=$PATH:$GOPATH/bin
 $ git clone https://github.com/antnest-network/ant.git
 
 $ cd ant
+$ make build
 $ make install
 ```
 

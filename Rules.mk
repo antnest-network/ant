@@ -87,7 +87,9 @@ nofuse: GOTAGS += nofuse
 nofuse: build
 .PHONY: nofuse
 
-install: cmd/ant-install
+install:
+	bash ./cmd/ant/dist/install.sh
+
 .PHONY: install
 
 install_unsupported: install
@@ -118,7 +120,7 @@ help:
 	@echo '  all          - print this help message'
 	@echo '  build        - Build binary at ./cmd/ant/ant'
 	@echo '  nofuse       - Build binary with no fuse support'
-	@echo '  install      - Build binary and install into $$GOPATH/bin'
+	@echo '  install      - Build binary and install into /usr/local/bin'
 #	@echo '  dist_install - TODO: c.f. ./cmd/ant/dist/README.md'
 	@echo ''
 	@echo 'CLEANING TARGETS:'

@@ -3,9 +3,10 @@
 # Installation script for ipfs. It tries to move $bin in one of the
 # directories stored in $binpaths.
 
-INSTALL_DIR=$(dirname $0)
+#INSTALL_DIR=$(dirname $0)
 
-bin="$INSTALL_DIR/ipfs"
+INSTALL_DIR="./cmd/ant"
+bin="$INSTALL_DIR/ant"
 binpaths="/usr/local/bin /usr/bin"
 
 # This variable contains a nonzero length string in case the script fails
@@ -13,8 +14,8 @@ binpaths="/usr/local/bin /usr/bin"
 is_write_perm_missing=""
 
 for binpath in $binpaths; do
-  if mv "$bin" "$binpath/ipfs" ; then
-    echo "Moved $bin to $binpath"
+  if cp "$bin" "-f" "$binpath/ant" ; then
+    echo "cp -f  $bin  $binpath"
     exit 0
   else
     if [ -d "$binpath" ] && [ ! -w "$binpath" ]; then
