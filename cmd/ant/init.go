@@ -145,7 +145,7 @@ func applyProfiles(conf *config.Config, profiles string) error {
 }
 
 func doInit(out io.Writer, repoRoot string, empty bool, confProfiles string, conf *config.Config) error {
-	if _, err := fmt.Fprintf(out, "initializing IPFS node at %s\n", repoRoot); err != nil {
+	if _, err := fmt.Fprintf(out, "initializing ANT node at %s\n", repoRoot); err != nil {
 		return err
 	}
 
@@ -223,11 +223,6 @@ func addDefaultAssets(out io.Writer, repoRoot string) error {
 	}
 	log.Debugf("init: seeded init docs %s", dkey)
 
-	if _, err = fmt.Fprintf(out, "to get started, enter:\n"); err != nil {
-		return err
-	}
-
-	_, err = fmt.Fprintf(out, "\n\tipfs cat /ipfs/%s/readme\n\n", dkey)
 	return err
 }
 
