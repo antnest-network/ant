@@ -352,7 +352,7 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 	pubsub, _ := req.Options[enablePubSubKwd].(bool)
 	if _, hasMplex := req.Options[enableMultiplexKwd]; hasMplex {
 		log.Errorf("The mplex multiplexer has been enabled by default and the experimental %s flag has been removed.")
-		log.Errorf("To disable this multiplexer, please configure `Swarm.Transports.Multiplexers'.")
+		log.Errorf("To disable this multiplexer, please configure `Ant.Transports.Multiplexers'.")
 	}
 
 	// Start assembling node config
@@ -403,8 +403,8 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 	node.IsDaemon = true
 
 	if node.PNetFingerprint != nil {
-		fmt.Println("Swarm is limited to private network of peers with the swarm key")
-		fmt.Printf("Swarm key fingerprint: %x\n", node.PNetFingerprint)
+		fmt.Println("Ant is limited to private network of peers with the ant key")
+		fmt.Printf("Ant key fingerprint: %x\n", node.PNetFingerprint)
 	}
 
 	printSwarmAddrs(node)
@@ -531,7 +531,7 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 			}
 			peers, err := ipfs.Swarm().Peers(cctx.Context())
 			if err != nil {
-				log.Errorf("failed to read swarm peers: %v", err)
+				log.Errorf("failed to read ant peers: %v", err)
 			}
 			if len(peers) == 0 {
 				log.Error("failed to bootstrap (no peers found): consider updating Bootstrap or Peering section of your config")
@@ -663,7 +663,7 @@ func serveHTTPApi(req *cmds.Request, cctx *oldcmds.Context) (<-chan error, error
 // printSwarmAddrs prints the addresses of the host
 func printSwarmAddrs(node *core.IpfsNode) {
 	if !node.IsOnline {
-		fmt.Println("Swarm not listening, running in offline mode.")
+		fmt.Println("Ant not listening, running in offline mode.")
 		return
 	}
 
@@ -677,7 +677,7 @@ func printSwarmAddrs(node *core.IpfsNode) {
 	}
 	sort.Strings(lisAddrs)
 	for _, addr := range lisAddrs {
-		fmt.Printf("Swarm listening on %s\n", addr)
+		fmt.Printf("Ant listening on %s\n", addr)
 	}
 
 	var addrs []string
@@ -686,7 +686,7 @@ func printSwarmAddrs(node *core.IpfsNode) {
 	}
 	sort.Strings(addrs)
 	for _, addr := range addrs {
-		fmt.Printf("Swarm announcing %s\n", addr)
+		fmt.Printf("Ant announcing %s\n", addr)
 	}
 
 }
@@ -888,7 +888,7 @@ func printVersion() {
 	if version.CurrentCommit != "" {
 		v += "-" + version.CurrentCommit
 	}
-	fmt.Printf("go-ipfs version: %s\n", v)
+	fmt.Printf("ant version: %s\n", v)
 	fmt.Printf("Repo version: %d\n", fsrepo.RepoVersion)
 	fmt.Printf("System version: %s\n", runtime.GOARCH+"/"+runtime.GOOS)
 	fmt.Printf("Golang version: %s\n", runtime.Version())

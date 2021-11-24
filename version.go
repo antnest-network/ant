@@ -4,7 +4,7 @@ package ipfs
 var CurrentCommit string
 
 // CurrentVersionNumber is the current application's version literal
-const CurrentVersionNumber = "0.2.0"
+const CurrentVersionNumber = "0.2.1"
 
 const ApiVersion = "/ant/" + CurrentVersionNumber + "/"
 

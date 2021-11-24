@@ -34,7 +34,7 @@ ADVANCED COMMANDS
 NETWORK COMMANDS
   id            Show info about ANT peers
   bootstrap     Add or remove bootstrap peers
-  swarm         Manage connections to the p2p network
+  network       Manage connections to the p2p network
   ping          Measure the latency of a connection
 
 TOOL COMMANDS
@@ -89,7 +89,7 @@ var rootSubcommands = map[string]*cmds.Command{
 	//"bitswap":   BitswapCmd,
 	//"block":     BlockCmd,
 	//"cat":       CatCmd,
-	"commands":  CommandsDaemonCmd,
+	"commands": CommandsDaemonCmd,
 	//"files":     FilesCmd,
 	//"filestore": FileStoreCmd,
 	//"get":       GetCmd,
@@ -102,28 +102,28 @@ var rootSubcommands = map[string]*cmds.Command{
 	//"dht":       DhtCmd,
 	//"diag":      DiagCmd,
 	//"dns":       DNSCmd,
-	"id":        IDCmd,
+	"id": IDCmd,
 	//"key":       KeyCmd,
-	"log":       LogCmd,
+	"log": LogCmd,
 	//"ls":        LsCmd,
 	//"mount":     MountCmd,
 	//"name":      name.NameCmd,
 	//"object":    ocmd.ObjectCmd,
 	//"pin":       pin.PinCmd,
-	"ping":      PingCmd,
+	"ping": PingCmd,
 	//"p2p":       P2PCmd,
 	//"refs":      RefsCmd,
 	//"resolve":   ResolveCmd,
-	"swarm":     SwarmCmd,
+	"network": SwarmCmd,
 	//"tar":       TarCmd,
 	//"file":      unixfs.UnixFSCmd,
 	//"update":    ExternalBinary("Please see https://git.io/fjylH for installation instructions."),
 	//"urlstore":  urlStoreCmd,
-	"version":   VersionCmd,
-	"shutdown":  daemonShutdownCmd,
+	"version":  VersionCmd,
+	"shutdown": daemonShutdownCmd,
 	//"cid":       CidCmd,
-	"cheque":    ChequeCmd,
-	"wallet":    WalletCmd,
+	"cheque": ChequeCmd,
+	"wallet": WalletCmd,
 }
 
 // RootRO is the readonly version of Root
@@ -171,8 +171,8 @@ var rootROSubcommands = map[string]*cmds.Command{
 	//	},
 	//},
 	//"resolve": ResolveCmd,
-	"cheque":  ChequeCmd,
-	"wallet":  WalletCmd,
+	"cheque": ChequeCmd,
+	"wallet": WalletCmd,
 }
 
 func init() {

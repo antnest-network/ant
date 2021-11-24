@@ -112,7 +112,7 @@ func StartListening(addresses []string) func(host host.Host) error {
 		if err != nil {
 			return err
 		}
-		log.Infof("Swarm listening at: %s", addrs)
+		log.Infof("Ant listening at: %s", addrs)
 		return nil
 	}
 }

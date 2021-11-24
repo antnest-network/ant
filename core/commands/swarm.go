@@ -38,9 +38,9 @@ type addrMap struct {
 
 var SwarmCmd = &cmds.Command{
 	Helptext: cmds.HelpText{
-		Tagline: "Interact with the swarm.",
+		Tagline: "Interact with the network.",
 		ShortDescription: `
-'ipfs swarm' is a tool to manipulate the network swarm. The swarm is the
+'ipfs network' is a tool to manipulate the network. The network is the
 component that opens, listens for, and maintains connections to other
 ipfs peers in the internet.
 `,
@@ -65,7 +65,7 @@ var swarmPeersCmd = &cmds.Command{
 	Helptext: cmds.HelpText{
 		Tagline: "List peers with open connections.",
 		ShortDescription: `
-'ipfs swarm peers' lists the set of peers this node is connected to.
+'ant network peers' lists the set of peers this node is connected to.
 `,
 	},
 	Options: []cmds.Option{

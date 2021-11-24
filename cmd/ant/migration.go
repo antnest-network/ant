@@ -241,7 +241,7 @@ func addMigrationPaths(ctx context.Context, node *core.IpfsNode, peerInfo peer.A
 		return errors.New("nothing downloaded by ipfs fetcher")
 	}
 	if len(peerInfo.Addrs) == 0 {
-		return errors.New("no local swarm address for migration node")
+		return errors.New("no local ant address for migration node")
 	}
 
 	ipfs, err := coreapi.NewCoreAPI(node)
